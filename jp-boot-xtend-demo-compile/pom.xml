@@ -21,6 +21,18 @@
 		<java.version>1.8</java.version>
 		<xtend.version>2.25.0</xtend.version>
 	</properties>
+	
+    	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>xtext-dev-bom</artifactId>
+				<version>${xtend.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
